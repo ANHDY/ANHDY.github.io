@@ -144,6 +144,415 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python网络爬虫" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#网络爬虫</p>
+<p>步骤：</p>
+<ul>
+<li><p>通过网络链接获取网页内容</p>
+</li>
+<li><p>对获取的网页内容进行处理</p>
+</li>
+</ul>
+<p>##requests模块</p>
+<ul>
+<li><p>requests模块是一个简介且简单处理<b>HTTP请求</b>的工具</p>
+</li>
+<li><p>支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等</p>
+</li>
+</ul>
+<p>#####requests网页请求：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">gets()</td>
+<td style="text-align:center">对应HTTP的GET方式</td>
+</tr>
+<tr>
+<td style="text-align:center">post()</td>
+<td style="text-align:center">对应HTTP的POST方式，用于传递用户数据</td>
+</tr>
+</tbody>
+</table>
+<p>#####request对象属性：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">status_code</td>
+<td style="text-align:center">HTTP请求的返回状态，200表示连接成功，400表示失败</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">HTTP响应内容的字符串形式，即url对应的页面内容</td>
+</tr>
+</tbody>
+</table>
+<p>##BeautifulSoup</p>
+<ul>
+<li><p>用于解析HTML或XML</p>
+</li>
+<li><p>如果没有安装，用命令 pip install beautifulsoup4</p>
+</li>
+<li><p>import bs4</p>
+</li>
+<li><p>步骤：</p>
+<ul>
+<li>创建BeautifulSoup对象</li>
+<li>查询节点<br>  find，找到第一个满足条件的节点<br>  find_all，找到所有满足条件的节点</li>
+</ul>
+</li>
+</ul>
+<p>查找节点：</p>
+<p>可按照节点类型、属性或内容访问</p>
+<ul>
+<li><p>按类型查找节点：<br>  <code>bs.find_all(&#39;a&#39;)</code></p>
+</li>
+<li><p>按属性查找节点<br>  <code>bs.find_all(&#39;a&#39;, href=&#39;a.html&#39;)</code><br>  <code>bs.find_all(&#39;a&#39;, href=&#39;a.html&#39;, string = &#39;next page&#39;)</code><br>  <b>注意class：</b><br>  <code>bs.find_all(&#39;a&#39;, class_ = &#39;a_link)</code>或者<code>bs.find_all(&#39;a&#39;, {&#39;class&#39;:&#39;a_link&#39;})</code></p>
+</li>
+</ul>
+<p>##Pandas</p>
+<ul>
+<li>一个强大的分析结构化数据的工具集</li>
+<li>基础是NumPy，提供了高性能矩阵的运算</li>
+<li>应用： 数据挖掘，数据分析<ul>
+<li>如，学生成绩分析、股票数据分析等</li>
+</ul>
+</li>
+<li>提供数据清洗功能</li>
+</ul>
+<p>####Pandas的数据结构</p>
+<p>#####Series</p>
+<ul>
+<li>类似一维数组的对象</li>
+<li>通过list构建Series<ul>
+<li>例：ser_obj = pd.Series(rang(10))</li>
+</ul>
+</li>
+<li>由数据和索引组成<ul>
+<li>索引在左，数据在右</li>
+<li>索引是自动创建的</li>
+</ul>
+</li>
+<li>获取数据和索引<ul>
+<li>ser_obj.index, ser_obj.values</li>
+</ul>
+</li>
+<li>预览数据<ul>
+<li>ser_obj.head(n) ——— 》 预览前几行</li>
+<li>ser_obj.tail(n)  ——— 》 预览后几行</li>
+</ul>
+</li>
+</ul>
+<p>#####DataFrame</p>
+<ul>
+<li>类似多维数组/表格数据（如：Excel，R中的data.frame)</li>
+<li>每列数据可以是不同的类型，</li>
+<li><p>索引包括列索引和行索引</p>
+</li>
+<li><p>通过ndarray构建DataFrame</p>
+</li>
+<li>通过dict构建DataFrame</li>
+<li>通过列索引获取列数据（Series类型）<ul>
+<li>df_obj[col_idx] 或 df_obj.col_idx</li>
+</ul>
+</li>
+<li>增加列数据，类似dict添加key-value<ul>
+<li>df_obj[New_col_idx] = Data</li>
+</ul>
+</li>
+<li>删除列<ul>
+<li>del df_obj[col_idx]</li>
+</ul>
+</li>
+</ul>
+<p>######索引操作</p>
+<ul>
+<li>DataFrame索引<ul>
+<li>列索引：<br>df_obj[‘label’]</li>
+<li>不连续索引<br>df_obj[ [‘label1’ , ‘label2’] ]</li>
+</ul>
+</li>
+</ul>
+<p>######排序</p>
+<ul>
+<li>sort_index ,索引排序<ul>
+<li>对DataFrame操作时注意轴方向</li>
+</ul>
+</li>
+<li>按值排序<ul>
+<li>sort_values(by = ‘label’)</li>
+</ul>
+</li>
+</ul>
+<p>######常用的统计计算</p>
+<ul>
+<li>sum，mean（均值），max，min……</li>
+<li>axis = 0 按列统计，axis = 1 按行统计</li>
+<li>skipna 排除缺失值，默认为true</li>
+<li>idmax, idmin（获取得到最大值和最小值的索引值），cumsum（样本值的累计和）</li>
+</ul>
+<p>######统计描述</p>
+<ul>
+<li>describe产生多个统计数据</li>
+</ul>
+<p>######Pandas数据清洗</p>
+<ul>
+<li>处理缺失数据<ul>
+<li>dropna()丢弃缺失数据</li>
+<li>fillna()填充缺失数据</li>
+</ul>
+</li>
+<li>数据过滤<br>  -df[filter_condition]依据filter_condition对数据进行过滤</li>
+</ul>
+<p>######Pandas数据可视化</p>
+<ul>
+<li>Pandas提供了内建的绘图功能（基于matplotlib）</li>
+<li>plot(kind, x, y, title, figsize)<br>  x,y横纵坐标对应的数据列<br>  title图像名称<br>  figsize图像尺寸</li>
+<li>保存图片<ul>
+<li>plt.savefig()</li>
+</ul>
+</li>
+<li><a href="https://pandas.pydata.org/pandas-docs/stable/visualization.html" target="_blank" rel="noopener">数据可视化例子网站</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/24/Python网络爬虫/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-json_csv_os" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##json</p>
+<ul>
+<li><p>JSON 是一种轻量级数据交换格式</p>
+</li>
+<li><p>可以对复杂数据进行表达和存储，易于阅读和理解</p>
+</li>
+</ul>
+<p>####规则：</p>
+<ol>
+<li>数据保存在键值对中</li>
+<li>键值对之间由逗号分隔</li>
+<li>花括号用于保存键值对数据组成的对象</li>
+<li>方括号用于保存键值对数据组成的数组</li>
+</ol>
+<p>####JSON库：<br>JSON对数据的读入分为两个过程：</p>
+<ol>
+<li>编码：将Python数据类型转换为JSON格式的过程</li>
+<li>解码：从JSON格式中解析数据对应到Python数据类型的过程</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import json</td>
+<td style="text-align:center">引入模块</td>
+</tr>
+<tr>
+<td style="text-align:center">json.dumps()</td>
+<td style="text-align:center">将Python数据类型转换为JSON格式</td>
+</tr>
+<tr>
+<td style="text-align:center">json.loads()</td>
+<td style="text-align:center">将JSON格式字符串转换为Python数据类型</td>
+</tr>
+<tr>
+<td style="text-align:center">json.dump()</td>
+<td style="text-align:center">与dumps()功能一致，输出列文件</td>
+</tr>
+<tr>
+<td style="text-align:center">json.load()</td>
+<td style="text-align:center">与loads()功能一致，从文件读入</td>
+</tr>
+</tbody>
+</table>
+<p>##csv</p>
+<ul>
+<li>CSV：是一种通用的、相对简单的文件格式</li>
+</ul>
+<p>####规则：</p>
+<ol>
+<li>以行为单位</li>
+<li>每行表示一条记录</li>
+<li>以英文逗号分割每列数据（如果数据为空，逗号也要保留）</li>
+<li>列名通常放置在文件第一行</li>
+</ol>
+<p>###</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import csv</td>
+<td style="text-align:center">引入模块</td>
+</tr>
+<tr>
+<td style="text-align:center">csv.writerow(list)</td>
+<td style="text-align:center">将列表中的元素写入文件的一行中</td>
+</tr>
+<tr>
+<td style="text-align:center">csv.reader()</td>
+<td style="text-align:center">将每行记录作为列表返回</td>
+</tr>
+</tbody>
+</table>
+<p>####使用with语句操作文件对象<br>使用with语句，不管在文件处理过程中是否发生异常，都能保证with语句执行完毕后关闭文件，不需要close()语句</p>
+<p>####csv文件在Excel中打开中文乱码解决办法：<br>用notepad打开，转换为ASCII编码格式，再次打开就可以了。</p>
+<p>##os</p>
+<ul>
+<li>os模块提供了与系统、目录操作相关的功能，不受平台的限制</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import cos</td>
+<td style="text-align:center">引入模块</td>
+</tr>
+<tr>
+<td style="text-align:center">os.remove()</td>
+<td style="text-align:center">删除文件</td>
+</tr>
+<tr>
+<td style="text-align:center">os.makedirs()</td>
+<td style="text-align:center">创建多层目录</td>
+</tr>
+<tr>
+<td style="text-align:center">os.rmdir()</td>
+<td style="text-align:center">删除单级目录</td>
+</tr>
+<tr>
+<td style="text-align:center">os.rename()</td>
+<td style="text-align:center">重命名文件</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.isfile()</td>
+<td style="text-align:center">判断是否为文件</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.isdir()</td>
+<td style="text-align:center">判断是否为目录</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.join()</td>
+<td style="text-align:center">连接目录，如path1连接path2位path1/path2</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.splitext()</td>
+<td style="text-align:center">将文件分割成文件名与扩展名，如分割tmp.txt为tmp和.txt</td>
+</tr>
+</tbody>
+</table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/24/json_csv_os/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python零碎知识总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
