@@ -606,22 +606,83 @@
       
         <h3 id="零碎知识"><a href="#零碎知识" class="headerlink" title="零碎知识"></a>零碎知识</h3><ol>
 <li><p>注释</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是注释内容</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">    单撇号也是注释的</span></span><br><span class="line"><span class="string">    而且可以注释多行</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
-</li>
+<pre><code># 这是注释内容
+&apos;&apos;&apos;
+    单撇号也是注释的
+    而且可以注释多行
+&apos;&apos;&apos;
+</code></pre></li>
 <li><p>Python语法简单，末尾无空格，<b>缩进非常严格</b></p>
 </li>
-<li><p>list总结</p>
-<ul>
+<li>list总结<ul>
 <li>l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的<br>  l [-2:]–&gt;表示获取后两个元素<br>  l [:-3]–&gt;表示从第0个到倒数第三个元素</li>
 <li>len()函数获取list元素的个数</li>
 <li>append(‘’)函数是在list末尾添加元素</li>
 <li>insert(3,’a’),指在3的位置添加元素a</li>
 <li>pop()函数删除末尾元素</li>
-<li><p>pop(3),删除位置3的元素</p>
-<p>函数 | 含义<br>:–:|:–:<br>list1 + list2  | 连接两个列表<br>list1 * n  | 重复n次列表内容<br>len(list1) |返回列表长度（元素个数）<br>x in list1 |检查元素是否在列表中（返回 true 或 false）<br>list1.append(x)   |将x存入list1列表的末尾<br>list1.sort()  |对列表元素排序<br>list1.reverse()   |将列表元素逆序<br>list1.index() |返回第一次出现元素x的索引值<br>list1.insert(i,x) |在位置i处插入新元素x<br>list1.count(x)|返回元素x在列表中的数量<br>list1.remove(x)   |删除列表中第一次出现的元素x<br>list1.pop(i)      |去除列表中i位置上的元素，并将其删除</p>
-</li>
+<li>pop(3),删除位置3的元素</li>
 </ul>
 </li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">list1 + list2</td>
+<td style="text-align:center">连接两个列表</td>
+</tr>
+<tr>
+<td style="text-align:center">list1 * n</td>
+<td style="text-align:center">重复n次列表内容</td>
+</tr>
+<tr>
+<td style="text-align:center">len(list1)</td>
+<td style="text-align:center">返回列表长度（元素个数）</td>
+</tr>
+<tr>
+<td style="text-align:center">x in list1</td>
+<td style="text-align:center">检查元素是否在列表中（返回 true 或 false）</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.append(x)</td>
+<td style="text-align:center">将x存入list1列表的末尾</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.sort()</td>
+<td style="text-align:center">对列表元素排序</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.reverse()</td>
+<td style="text-align:center">将列表元素逆序</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.index()</td>
+<td style="text-align:center">返回第一次出现元素x的索引值</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.insert(i,x)</td>
+<td style="text-align:center">在位置i处插入新元素x</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.count(x)</td>
+<td style="text-align:center">返回元素x在列表中的数量</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.remove(x)</td>
+<td style="text-align:center">删除列表中第一次出现的元素x</td>
+</tr>
+<tr>
+<td style="text-align:center">list1.pop(i)</td>
+<td style="text-align:center">去除列表中i位置上的元素，并将其删除</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
 <li>元组：tuple = (1,2,3,4)<ul>
 <li>一经创建，不能改变（长度，内容）</li>
 </ul>
