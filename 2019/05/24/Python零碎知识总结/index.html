@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="anhdy">
 <meta property="og:description" content="零碎知识 注释 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的个数 app">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-26T09:09:04.244Z">
+<meta property="og:updated_time" content="2019-05-26T09:17:42.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python零碎知识总结">
 <meta name="twitter:description" content="零碎知识 注释 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的个数 app">
@@ -181,7 +181,7 @@
 <li>insert(3,’a’),指在3的位置添加元素a</li>
 <li>pop()函数删除末尾元素</li>
 <li><p>pop(3),删除位置3的元素</p>
-<p>函数 | 含义<br>:–:|:–:<br>list1 + list2  | 连接两个列表<br>list1 * n  | 重复n次列表内容<br>len(list1) |返回列表长度（元素个数）<br>x in list1 |检查元素是否在列表中（返回 true 或 false）<br>list1.append(x)   |将x存入list1列表的末尾<br>list1.sort()      |对列表元素排序<br>list1.reverse()   |将列表元素逆序<br>list1.index()     |返回第一次出现元素x的索引值<br>list1.insert(i,x) |在位置i处插入新元素x<br>list1.count(x)    |返回元素x在列表中的数量<br>list1.remove(x)   |删除列表中第一次出现的元素x<br>list1.pop(i)      |去除列表中i位置上的元素，并将其删除</p>
+<p>函数 | 含义<br>:–:|:–:<br>list1 + list2  | 连接两个列表<br>list1 * n  | 重复n次列表内容<br>len(list1) |返回列表长度（元素个数）<br>x in list1 |检查元素是否在列表中（返回 true 或 false）<br>list1.append(x)   |将x存入list1列表的末尾<br>list1.sort()  |对列表元素排序<br>list1.reverse()   |将列表元素逆序<br>list1.index() |返回第一次出现元素x的索引值<br>list1.insert(i,x) |在位置i处插入新元素x<br>list1.count(x)|返回元素x在列表中的数量<br>list1.remove(x)   |删除列表中第一次出现的元素x<br>list1.pop(i)      |去除列表中i位置上的元素，并将其删除</p>
 </li>
 </ul>
 </li>
@@ -223,7 +223,10 @@
 </li>
 <li><p>有关文件的操作</p>
 <ul>
-<li>文件打开<br>f = open(filename, mode)<br>filename：文件名(包括路径)<br>mode：打开模式<br>操作符 | 含义<br>:–: | :–:<br>r  | 只读，文件不存在则报错<br>w | 只写，文件不存在则自动创建<br>a | 在文件末尾附加<br>r+ | 读写</li>
+<li>文件打开<br>f = open(filename, mode)<br>filename：文件名(包括路径)<br>mode：打开模式</li>
+</ul>
+<p>操作符 | 含义<br>:–: | :–:<br>r  | 只读，文件不存在则报错<br>w | 只写，文件不存在则自动创建<br>a | 在文件末尾附加<br>r+ | 读写</p>
+<ul>
 <li>文件的写入：<br>f.write(‘我是写入到文件中的内容’)</li>
 <li>文件打开一定要有文件关闭<br>f.close()</li>
 <li>读取文件<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">f = open(pwd_strength.txt, <span class="string">'r'</span>)</span><br><span class="line"><span class="comment">#lines是列表类型</span></span><br><span class="line">lines = f.readlines()</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    print(line)</span><br><span class="line">f.close</span><br></pre></td></tr></table></figure>
