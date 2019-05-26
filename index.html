@@ -144,13 +144,224 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Python网络爬虫" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-json-csv-os" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/26/json-csv-os/">json_csv_os</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/26/json-csv-os/" class="archive-article-date">
+  	<time datetime="2019-05-26T08:41:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-26</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#网络爬虫</p>
-<p>步骤：</p>
+        <p>##json</p>
+<ul>
+<li><p>JSON 是一种轻量级数据交换格式</p>
+</li>
+<li><p>可以对复杂数据进行表达和存储，易于阅读和理解</p>
+</li>
+</ul>
+<p>####规则：</p>
+<ol>
+<li>数据保存在键值对中</li>
+<li>键值对之间由逗号分隔</li>
+<li>花括号用于保存键值对数据组成的对象</li>
+<li>方括号用于保存键值对数据组成的数组</li>
+</ol>
+<p>####JSON库：<br>JSON对数据的读入分为两个过程：</p>
+<ol>
+<li>编码：将Python数据类型转换为JSON格式的过程</li>
+<li>解码：从JSON格式中解析数据对应到Python数据类型的过程</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import json</td>
+<td style="text-align:center">引入模块</td>
+</tr>
+<tr>
+<td style="text-align:center">json.dumps()</td>
+<td style="text-align:center">将Python数据类型转换为JSON格式</td>
+</tr>
+<tr>
+<td style="text-align:center">json.loads()</td>
+<td style="text-align:center">将JSON格式字符串转换为Python数据类型</td>
+</tr>
+<tr>
+<td style="text-align:center">json.dump()</td>
+<td style="text-align:center">与dumps()功能一致，输出列文件</td>
+</tr>
+<tr>
+<td style="text-align:center">json.load()</td>
+<td style="text-align:center">与loads()功能一致，从文件读入</td>
+</tr>
+</tbody>
+</table>
+<p>##csv</p>
+<ul>
+<li>CSV：是一种通用的、相对简单的文件格式</li>
+</ul>
+<p>####规则：</p>
+<ol>
+<li>以行为单位</li>
+<li>每行表示一条记录</li>
+<li>以英文逗号分割每列数据（如果数据为空，逗号也要保留）</li>
+<li>列名通常放置在文件第一行</li>
+</ol>
+<p>###</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import csv</td>
+<td style="text-align:center">引入模块</td>
+</tr>
+<tr>
+<td style="text-align:center">csv.writerow(list)</td>
+<td style="text-align:center">将列表中的元素写入文件的一行中</td>
+</tr>
+<tr>
+<td style="text-align:center">csv.reader()</td>
+<td style="text-align:center">将每行记录作为列表返回</td>
+</tr>
+</tbody>
+</table>
+<p>####使用with语句操作文件对象<br>使用with语句，不管在文件处理过程中是否发生异常，都能保证with语句执行完毕后关闭文件，不需要close()语句</p>
+<p>####csv文件在Excel中打开中文乱码解决办法：<br>用notepad打开，转换为ASCII编码格式，再次打开就可以了。</p>
+<p>##os</p>
+<ul>
+<li>os模块提供了与系统、目录操作相关的功能，不受平台的限制</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">函数</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import cos</td>
+<td style="text-align:center">引入模块</td>
+</tr>
+<tr>
+<td style="text-align:center">os.remove()</td>
+<td style="text-align:center">删除文件</td>
+</tr>
+<tr>
+<td style="text-align:center">os.makedirs()</td>
+<td style="text-align:center">创建多层目录</td>
+</tr>
+<tr>
+<td style="text-align:center">os.rmdir()</td>
+<td style="text-align:center">删除单级目录</td>
+</tr>
+<tr>
+<td style="text-align:center">os.rename()</td>
+<td style="text-align:center">重命名文件</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.isfile()</td>
+<td style="text-align:center">判断是否为文件</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.isdir()</td>
+<td style="text-align:center">判断是否为目录</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.join()</td>
+<td style="text-align:center">连接目录，如path1连接path2位path1/path2</td>
+</tr>
+<tr>
+<td style="text-align:center">os.path.splitext()</td>
+<td style="text-align:center">将文件分割成文件名与扩展名，如分割tmp.txt为tmp和.txt</td>
+</tr>
+</tbody>
+</table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/26/json-csv-os/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Python网络爬虫" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/24/Python网络爬虫/">Python网络爬虫</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/24/Python网络爬虫/" class="archive-article-date">
+  	<time datetime="2019-05-24T13:56:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>步骤：</p>
 <ul>
 <li><p>通过网络链接获取网页内容</p>
 </li>
@@ -337,6 +548,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
