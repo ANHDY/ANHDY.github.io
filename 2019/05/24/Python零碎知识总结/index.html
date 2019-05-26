@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Python零碎知识总结 | anhdy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###零碎知识  注释： 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结：  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的">
+  <meta name="description" content="零碎知识 注释： 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结：  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的个数 a">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python零碎知识总结">
 <meta property="og:url" content="http://yoursite.com/2019/05/24/Python零碎知识总结/index.html">
 <meta property="og:site_name" content="anhdy">
-<meta property="og:description" content="###零碎知识  注释： 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结：  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的">
+<meta property="og:description" content="零碎知识 注释： 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结：  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的个数 a">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-24T13:25:00.851Z">
+<meta property="og:updated_time" content="2019-05-26T09:01:25.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python零碎知识总结">
-<meta name="twitter:description" content="###零碎知识  注释： 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结：  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的">
+<meta name="twitter:description" content="零碎知识 注释： 12345# 这是注释内容&apos;&apos;&apos;    单撇号也是注释的    而且可以注释多行&apos;&apos;&apos;  Python语法简单，末尾无空格，缩进非常严格  list总结：  l = [‘a’,’b’,’c’,’d’,’e’]   list是用方括号表示的  l [-2:]–&amp;gt;表示获取后两个元素  l [:-3]–&amp;gt;表示从第0个到倒数第三个元素 len()函数获取list元素的个数 a">
   
     <link rel="alternative" href="/atom.xml" title="anhdy" type="application/atom+xml">
   
@@ -167,8 +167,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###零碎知识</p>
-<ol>
+        <h3 id="零碎知识"><a href="#零碎知识" class="headerlink" title="零碎知识"></a>零碎知识</h3><ol>
 <li><p>注释：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是注释内容</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">    单撇号也是注释的</span></span><br><span class="line"><span class="string">    而且可以注释多行</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -186,32 +185,28 @@
 </li>
 </ul>
 </li>
-<li><p>元组：tuple = (1,2,3,4)</p>
-<ul>
+<li>元组：tuple = (1,2,3,4)<ul>
 <li>一经创建，不能改变（长度，内容）</li>
 </ul>
 </li>
-<li><p>zip() 函数用于将可迭代对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的对象。</p>
-<ul>
+<li>zip() 函数用于将可迭代对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的对象。<ul>
 <li>利用 * 号操作符，与zip相反，进行解压。</li>
 <li>可使用list()函数或者dist()函数，将其类型转换</li>
 </ul>
 </li>
-<li><p>eval():  将 <b>数字字符串</b> 转换为数字</p>
-</li>
-<li><p>字典.items() :方法以列表形式（并非直接的列表，若要返回列表值还需调用list函数）返回可遍历的(键, 值) <b>元组数组</b>。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">D = &#123;<span class="string">'Google'</span>: <span class="string">'www.google.com'</span>, <span class="string">'Runoob'</span>: <span class="string">'www.runoob.com'</span>, <span class="string">'taobao'</span>: <span class="string">'www.taobao.com'</span>&#125;</span><br><span class="line"> </span><br><span class="line">print(<span class="string">"字典值 : %s"</span> % D.items())</span><br><span class="line">print(<span class="string">"转换为列表 : %s"</span> % list(D.items()))</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 遍历字典列表</span></span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> D.items():</span><br><span class="line">    print(key, value)</span><br></pre></td></tr></table></figure>
+<li>eval():  将 <b>数字字符串</b> 转换为数字</li>
+<li>字典.items() :方法以列表形式（并非直接的列表，若要返回列表值还需调用list函数）返回可遍历的(键, 值) <b>元组数组</b>。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">D = &#123;<span class="string">'Google'</span>: <span class="string">'www.google.com'</span>, <span class="string">'Runoob'</span>: <span class="string">'www.runoob.com'</span>, <span class="string">'taobao'</span>: <span class="string">'www.taobao.com'</span>&#125;</span><br><span class="line"> </span><br><span class="line">print(<span class="string">"字典值 : %s"</span> % D.items())</span><br><span class="line">print(<span class="string">"转换为列表 : %s"</span> % list(D.items()))</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 遍历字典列表</span></span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> D.items():</span><br><span class="line">    print(key, value)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>输出结果为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">字典值 : D_items([(&apos;Google&apos;, &apos;www.google.com&apos;), (&apos;taobao&apos;, &apos;www.taobao.com&apos;), (&apos;Runoob&apos;, &apos;www.runoob.com&apos;)])</span><br><span class="line">转换为列表 : [(&apos;Google&apos;, &apos;www.google.com&apos;), (&apos;taobao&apos;, &apos;www.taobao.com&apos;), (&apos;Runoob&apos;, &apos;www.runoob.com&apos;)]</span><br><span class="line">Google www.google.com</span><br><span class="line">taobao www.taobao.com</span><br><span class="line">Runoob www.runoob.com</span><br></pre></td></tr></table></figure></p>
-<ol start="7">
+<ol start="8">
 <li><p>if，while 条件不加括号，但是要在条件之后加分号，执行体要执行严格缩进</p>
 </li>
 <li><p>分隔符：split(‘’)，以有一个符号对list进行分割<br> 例如：str = [‘女’ 110 55 20]<br> str_list = str.split(‘ ‘)<br> str_list[0]  –&gt;’女’</p>
 </li>
-<li><p>输出穿插在中间  format()<br> 例如：print(‘性别：{}；体重：{} 公斤；身高:{} 厘米；年龄：{} 岁’.format(sex,weight,high,age))</p>
+<li><p>输出穿插在中间  format()<br>例如：print(‘性别：{}；体重：{} 公斤；身高:{} 厘米；年龄：{} 岁’.format(sex,weight,high,age))</p>
 </li>
-<li><p>异常  try–except<br> 执行try里面的语句，若出错，则执行对应except中的语句块</p>
+<li><p>异常  try–except<br>执行try里面的语句，若出错，则执行对应except中的语句块</p>
 <ul>
 <li>except ValueError: 值类型发生错误</li>
 <li>except IndexError：输出的信息过少</li>
@@ -236,8 +231,7 @@
 </ul>
 </li>
 </ol>
-<p>###turtle库</p>
-<ul>
+<h3 id="turtle库"><a href="#turtle库" class="headerlink" title="turtle库"></a>turtle库</h3><ul>
 <li>turtle库用来完成图形绘制</li>
 <li>分形：具有自相似性，即局部是整体成比例缩小的</li>
 </ul>
@@ -287,8 +281,7 @@
 </tr>
 </tbody>
 </table>
-<p>###math库</p>
-<table>
+<h3 id="math库"><a href="#math库" class="headerlink" title="math库"></a>math库</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">函数</th>
@@ -322,8 +315,7 @@
 </tr>
 </tbody>
 </table>
-<p>###datetime库</p>
-<ul>
+<h3 id="datetime库"><a href="#datetime库" class="headerlink" title="datetime库"></a>datetime库</h3><ul>
 <li>处理时间的标准函数库<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果引用包这样写：from datetime import datetime，则下面调用datetime时就可以只写一个datetime了</span></span><br><span class="line"></span><br><span class="line">now = datetime.datetime.now()</span><br><span class="line"></span><br><span class="line">print(<span class="string">'返回当前年号'</span>, now.year)</span><br><span class="line">print(<span class="string">'返回当前月号'</span>, now.month)</span><br><span class="line">print(<span class="string">'返回当前天号'</span>, now.day)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将字符串转换为日期</span></span><br><span class="line">date = datetime.datetime.strptime(<span class="string">'2019-5-13'</span>, format(<span class="string">'%Y-%m-%d'</span>))</span><br><span class="line">year = date.year</span><br><span class="line">month = date.month</span><br><span class="line">day = date.day</span><br><span class="line">print(<span class="string">'返回当前年，第几周，周几'</span>, now.isocalendar())</span><br><span class="line">print(<span class="string">'返回当前年'</span>, now.isocalendar()[<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -349,8 +341,7 @@
 </tr>
 </tbody>
 </table>
-<p>###Python的面向对象</p>
-<ul>
+<h3 id="Python的面向对象"><a href="#Python的面向对象" class="headerlink" title="Python的面向对象"></a>Python的面向对象</h3><ul>
 <li>class类，后面紧跟着为类名，类名的第一个字母通常大写。</li>
 <li><p>类中一定有一个方法：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># __init__ 方法的第一个参数永远是self，表示创建的实例本身</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, canshu)</span>:</span></span><br><span class="line">        self.canshu = canshu</span><br></pre></td></tr></table></figure>
@@ -359,8 +350,7 @@
 </li>
 <li>创建实例后，可利用实例化对象直接调用其中的方法</li>
 </ul>
-<p>###random库</p>
-<table>
+<h3 id="random库"><a href="#random库" class="headerlink" title="random库"></a>random库</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">函数</th>
@@ -394,8 +384,7 @@
 </tr>
 </tbody>
 </table>
-<p>###matplotlib库</p>
-<ul>
+<h3 id="matplotlib库"><a href="#matplotlib库" class="headerlink" title="matplotlib库"></a>matplotlib库</h3><ul>
 <li>matploylib是一个数据可视化函数库，提供了2D图表制作的基本函数</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.python <span class="keyword">as</span> plt</span><br><span class="line"><span class="comment"># 图表中解决中文问题的代码</span></span><br><span class="line">plt.rcParams[<span class="string">'font.sans-serif'</span>] = [<span class="string">'SimHei'</span>]</span><br><span class="line">plt.rcParams[<span class="string">'axes.unicode_minus'</span>] = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 散点图</span></span><br><span class="line"><span class="comment"># x,y分别是x坐标和y坐标的横纵坐标值</span></span><br><span class="line">plt.scatter(x, y)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 直方图</span></span><br><span class="line">plt.hist(data,bins)</span><br><span class="line"><span class="comment"># data:数据列表；bins:分组边界</span></span><br></pre></td></tr></table></figure>
@@ -421,8 +410,7 @@
 </tr>
 </tbody>
 </table>
-<p>###numpy库</p>
-<ul>
+<h3 id="numpy库"><a href="#numpy库" class="headerlink" title="numpy库"></a>numpy库</h3><ul>
 <li><p>NumPy（Numerical Python）：用Python实现科学计算库</p>
 </li>
 <li><p>以数组为对象进行基本运算</p>

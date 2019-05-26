@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python网络爬虫 | anhdy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#网络爬虫 步骤：  通过网络链接获取网页内容  对获取的网页内容进行处理   ##requests模块  requests模块是一个简介且简单处理HTTP请求的工具  支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等   #####requests网页请求：    函数 含义     gets() 对应HTTP的GET方式   post() 对应HTTP的POST方式">
+  <meta name="description" content="网络爬虫步骤：  通过网络链接获取网页内容  对获取的网页内容进行处理   requests模块 requests模块是一个简介且简单处理HTTP请求的工具  支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等   requests网页请求：   函数 含义     gets() 对应HTTP的GET方式   post() 对应HTTP的POST方式，用于传递用户数据">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python网络爬虫">
 <meta property="og:url" content="http://yoursite.com/2019/05/26/python网络爬虫/index.html">
 <meta property="og:site_name" content="anhdy">
-<meta property="og:description" content="#网络爬虫 步骤：  通过网络链接获取网页内容  对获取的网页内容进行处理   ##requests模块  requests模块是一个简介且简单处理HTTP请求的工具  支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等   #####requests网页请求：    函数 含义     gets() 对应HTTP的GET方式   post() 对应HTTP的POST方式">
+<meta property="og:description" content="网络爬虫步骤：  通过网络链接获取网页内容  对获取的网页内容进行处理   requests模块 requests模块是一个简介且简单处理HTTP请求的工具  支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等   requests网页请求：   函数 含义     gets() 对应HTTP的GET方式   post() 对应HTTP的POST方式，用于传递用户数据">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-26T08:56:14.605Z">
+<meta property="og:updated_time" content="2019-05-26T09:02:35.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python网络爬虫">
-<meta name="twitter:description" content="#网络爬虫 步骤：  通过网络链接获取网页内容  对获取的网页内容进行处理   ##requests模块  requests模块是一个简介且简单处理HTTP请求的工具  支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等   #####requests网页请求：    函数 含义     gets() 对应HTTP的GET方式   post() 对应HTTP的POST方式">
+<meta name="twitter:description" content="网络爬虫步骤：  通过网络链接获取网页内容  对获取的网页内容进行处理   requests模块 requests模块是一个简介且简单处理HTTP请求的工具  支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等   requests网页请求：   函数 含义     gets() 对应HTTP的GET方式   post() 对应HTTP的POST方式，用于传递用户数据">
   
     <link rel="alternative" href="/atom.xml" title="anhdy" type="application/atom+xml">
   
@@ -166,23 +166,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#网络爬虫</p>
-<p>步骤：</p>
+        <h1 id="网络爬虫"><a href="#网络爬虫" class="headerlink" title="网络爬虫"></a>网络爬虫</h1><p>步骤：</p>
 <ul>
 <li><p>通过网络链接获取网页内容</p>
 </li>
 <li><p>对获取的网页内容进行处理</p>
 </li>
 </ul>
-<p>##requests模块</p>
-<ul>
+<h2 id="requests模块"><a href="#requests模块" class="headerlink" title="requests模块"></a>requests模块</h2><ul>
 <li><p>requests模块是一个简介且简单处理<b>HTTP请求</b>的工具</p>
 </li>
 <li><p>支持非常丰富的链接访问功能，包括URL获取，HTTP会话，Cookie记录等</p>
 </li>
 </ul>
-<p>#####requests网页请求：</p>
-<table>
+<h5 id="requests网页请求："><a href="#requests网页请求：" class="headerlink" title="requests网页请求："></a>requests网页请求：</h5><table>
 <thead>
 <tr>
 <th style="text-align:center">函数</th>
@@ -200,8 +197,7 @@
 </tr>
 </tbody>
 </table>
-<p>#####request对象属性：</p>
-<table>
+<h5 id="request对象属性："><a href="#request对象属性：" class="headerlink" title="request对象属性："></a>request对象属性：</h5><table>
 <thead>
 <tr>
 <th style="text-align:center">函数</th>
@@ -219,8 +215,7 @@
 </tr>
 </tbody>
 </table>
-<p>##BeautifulSoup</p>
-<ul>
+<h2 id="BeautifulSoup"><a href="#BeautifulSoup" class="headerlink" title="BeautifulSoup"></a>BeautifulSoup</h2><ul>
 <li><p>用于解析HTML或XML</p>
 </li>
 <li><p>如果没有安装，用命令 pip install beautifulsoup4</p>
@@ -242,8 +237,7 @@
 <li><p>按属性查找节点<br>  <code>bs.find_all(&#39;a&#39;, href=&#39;a.html&#39;)</code><br>  <code>bs.find_all(&#39;a&#39;, href=&#39;a.html&#39;, string = &#39;next page&#39;)</code><br>  <b>注意class：</b><br>  <code>bs.find_all(&#39;a&#39;, class_ = &#39;a_link)</code>或者<code>bs.find_all(&#39;a&#39;, {&#39;class&#39;:&#39;a_link&#39;})</code></p>
 </li>
 </ul>
-<p>##Pandas</p>
-<ul>
+<h2 id="Pandas"><a href="#Pandas" class="headerlink" title="Pandas"></a>Pandas</h2><ul>
 <li>一个强大的分析结构化数据的工具集</li>
 <li>基础是NumPy，提供了高性能矩阵的运算</li>
 <li>应用： 数据挖掘，数据分析<ul>
@@ -252,9 +246,7 @@
 </li>
 <li>提供数据清洗功能</li>
 </ul>
-<p>####Pandas的数据结构</p>
-<p>#####Series</p>
-<ul>
+<h4 id="Pandas的数据结构"><a href="#Pandas的数据结构" class="headerlink" title="Pandas的数据结构"></a>Pandas的数据结构</h4><h5 id="Series"><a href="#Series" class="headerlink" title="Series"></a>Series</h5><ul>
 <li>类似一维数组的对象</li>
 <li>通过list构建Series<ul>
 <li>例：ser_obj = pd.Series(rang(10))</li>
@@ -275,8 +267,7 @@
 </ul>
 </li>
 </ul>
-<p>#####DataFrame</p>
-<ul>
+<h5 id="DataFrame"><a href="#DataFrame" class="headerlink" title="DataFrame"></a>DataFrame</h5><ul>
 <li>类似多维数组/表格数据（如：Excel，R中的data.frame)</li>
 <li>每列数据可以是不同的类型，</li>
 <li><p>索引包括列索引和行索引</p>
@@ -297,16 +288,14 @@
 </ul>
 </li>
 </ul>
-<p>######索引操作</p>
-<ul>
+<h6 id="索引操作"><a href="#索引操作" class="headerlink" title="索引操作"></a>索引操作</h6><ul>
 <li>DataFrame索引<ul>
 <li>列索引：<br>df_obj[‘label’]</li>
 <li>不连续索引<br>df_obj[ [‘label1’ , ‘label2’] ]</li>
 </ul>
 </li>
 </ul>
-<p>######排序</p>
-<ul>
+<h6 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h6><ul>
 <li>sort_index ,索引排序<ul>
 <li>对DataFrame操作时注意轴方向</li>
 </ul>
@@ -316,19 +305,16 @@
 </ul>
 </li>
 </ul>
-<p>######常用的统计计算</p>
-<ul>
+<h6 id="常用的统计计算"><a href="#常用的统计计算" class="headerlink" title="常用的统计计算"></a>常用的统计计算</h6><ul>
 <li>sum，mean（均值），max，min……</li>
 <li>axis = 0 按列统计，axis = 1 按行统计</li>
 <li>skipna 排除缺失值，默认为true</li>
 <li>idmax, idmin（获取得到最大值和最小值的索引值），cumsum（样本值的累计和）</li>
 </ul>
-<p>######统计描述</p>
-<ul>
+<h6 id="统计描述"><a href="#统计描述" class="headerlink" title="统计描述"></a>统计描述</h6><ul>
 <li>describe产生多个统计数据</li>
 </ul>
-<p>######Pandas数据清洗</p>
-<ul>
+<h6 id="Pandas数据清洗"><a href="#Pandas数据清洗" class="headerlink" title="Pandas数据清洗"></a>Pandas数据清洗</h6><ul>
 <li>处理缺失数据<ul>
 <li>dropna()丢弃缺失数据</li>
 <li>fillna()填充缺失数据</li>
@@ -336,8 +322,7 @@
 </li>
 <li>数据过滤<br>  -df[filter_condition]依据filter_condition对数据进行过滤</li>
 </ul>
-<p>######Pandas数据可视化</p>
-<ul>
+<h6 id="Pandas数据可视化"><a href="#Pandas数据可视化" class="headerlink" title="Pandas数据可视化"></a>Pandas数据可视化</h6><ul>
 <li>Pandas提供了内建的绘图功能（基于matplotlib）</li>
 <li>plot(kind, x, y, title, figsize)<br>  x,y横纵坐标对应的数据列<br>  title图像名称<br>  figsize图像尺寸</li>
 <li>保存图片<ul>
